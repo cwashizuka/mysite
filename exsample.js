@@ -102,3 +102,5 @@ console.log(`${name}と入力されました`);
 const age = readlineSync.qewstionlnt("年齢を入力してください:")
 
 /* 学習I～V */
+
+/* 続く */
