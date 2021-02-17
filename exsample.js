@@ -63,3 +63,40 @@ const インスタンス = new 定数(引数1, 引数2);
 /* コンストラクタのオーバーライド super() */
 /* 親クラスのコンストラクタが引数を受け取る場合には、「super」の後ろの丸括弧「( )」に引数を渡す */
 /* super(引数) */
+
+/* export default クラス名;　→　エクスポート（出力）*/
+/* 他のファイルで定義されているクラスを使用するにはインポート（読込）  →*/
+/* import クラス名 from "./ファイル名"; */
+
+/* 値のエクスポート */
+/* export default 定数名;   エクスポート  */
+/* import 定数名 from "./ファイル名";  インポート */
+/* デフォルトエクスポートは1ファイル1つの値のみ */
+
+
+/* 複数の値をエクスポートしたい場合 「名前付きエクスポート」*/
+/* import { 値の名前 } from "./ファイル名"; */
+/* export { 名前1, 名前2 };   1つのファイルから複数のエクスポート */
+
+
+/* 相対パス */
+/* ドット1つの「./」  ファイルと同じディレクトリ */
+/* 1つ上の階層に戻る場合はドット2つの「../」 */
+
+
+/* パッケージ */
+/* import 定数名 from "パッケージ名";   インポート  パッケージを自分のプログラムで使う */
+
+import chalk from "chalk";
+console.log(chalk.yellow("Hello World"));
+console.log(chalk.bgCyan("Hello World"));
+
+import readlineSync from "readline-sync";
+readlineSync.question("名前を入力してください:");
+
+import readlineSync from "readline-sync";
+const name = readlineSync.question("名前を入力してください:");
+console.log(`${name}と入力されました`);
+
+/* 整数を入力 */
+const age = readlineSync.qewstionlnt("年齢を入力してください:")
